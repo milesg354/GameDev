@@ -1,3 +1,4 @@
+
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
@@ -6,6 +7,8 @@ public class GameObject {
     // AP Standard: private instance variables
     private double x;
     private double y;
+   
+
     private int width;
     private int height;
     private Texture image;
@@ -23,29 +26,32 @@ public class GameObject {
     }
 
     // TODO 1: Write getter methods for x, y, and hitbox.
-    public double getX() {
+
+    public double getX(){
         return x;
     }
-    public double getY() {
+
+    public double getY(){
         return y;
     }
-    public Rectangle getHitbox() {
+
+    public Rectangle getHibox(){
         return hitbox;
     }
-
+    
 
     // TODO 2: Write setter methods for x and y. 
     // HINT: When you change x or y, you MUST also update the hitbox!
     // Example: hitbox.setPosition((int) newX, (int) newY);
-    public void setX(double newX) {
-        x = newX;
+    public void setX(double x){
+        this.x = x;
         hitbox.setPosition((int) x, (int) y);
     }
-    public void setY(double newY) {
-        y = newY;
+
+    public void setY(double y){
+        this.y = y;
         hitbox.setPosition((int) x, (int) y);
     }
-        
 
     /**
      * Draws the object to the screen. 
