@@ -23,4 +23,8 @@ public class Player extends GameObject {
 
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 65ddad25c5f1d01f86ead9821da1a78396e9837c
